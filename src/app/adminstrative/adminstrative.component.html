@@ -1,0 +1,35 @@
+<mat-toolbar fxLayout fxLayoutAlign="center">
+  <div fxFlex>
+  <button  mat-fab color="warn" aria-label="Example icon button with a home icon" *ngIf="sidnav.mode=='over'"
+  (click)="sidnav.toggle()">
+    <mat-icon *ngIf="!sidnav.opened">
+      home
+    </mat-icon>
+    <mat-icon *ngIf="sidnav.opened">
+      close
+    </mat-icon>
+  </button>
+</div>
+  <div fxFlex><h1 >የኢትዮጵያ ፊደራል ፖሊስ ብድር እና ቁጠባ ሲስተም</h1></div>
+  
+  </mat-toolbar>
+  <mat-sidenav-container fxLayout >
+    <mat-sidenav mode="side" opened #sidnav>
+
+         <img [src]="image" alt="" style="height:150px; width:auto">
+         <br>
+         <br>
+         <button mat-stroked-button class="menu"><i class="fa fa-home" aria-hidden="true"></i>Home</button>
+      <br>
+      <br>
+        <button mat-stroked-button class="menu"><i class="fa fa-user" aria-hidden="true"></i>Profile</button>
+     </mat-sidenav>
+    <mat-sidenav-content fxLayout
+    fxLayoutAlign="center" fxFlex="1 1 auto" fxLayoutGap="50px">Main</mat-sidenav-content>
+  </mat-sidenav-container>
+  <!-- <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>Drawer content</mat-drawer>
+    <mat-drawer-content fxLayout
+    fxLayoutAlign="center center">Main content</mat-drawer-content>
+  </mat-drawer-container> -->
+  

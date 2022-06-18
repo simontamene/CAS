@@ -1,0 +1,43 @@
+mat-sidenav{
+    background-color:burlywood;
+    width: 250px;
+    color:white;
+    margin: 20px;
+    padding: 36px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+mat-sidenav-container{
+    height: 600px;
+}
+mat-sidenav-content{
+    
+    
+    // text-align: center;
+    // justify-content: center;
+    background-color: blueviolet;
+    // margin: 250px;
+    // margin-left: 100px;
+    // padding-left: 30px;
+//    text-align: center;
+    color: lightcoral;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.menu{
+    width:80px;
+    // display:flex;
+    background-color: aqua;
+}
+mat-toolbar{
+    background-color:burlywood;
+//   display: flex;
+//   text-align: center;
+//   justify-content: center;
+}
