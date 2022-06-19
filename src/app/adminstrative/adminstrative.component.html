@@ -19,13 +19,16 @@
          <img [src]="image" alt="" style="height:150px; width:auto">
          <br>
          <br>
-         <button mat-stroked-button class="menu"><i class="fa fa-home" aria-hidden="true"></i>Home</button>
+         <button mat-stroked-button class="menu" ><i class="fa fa-home" aria-hidden="true"></i><a routerLink="">Home</a></button>
       <br>
+      
       <br>
-        <button mat-stroked-button class="menu"><i class="fa fa-user" aria-hidden="true"></i>Profile</button>
+        <button mat-stroked-button class="menu"><i class="fa fa-user" aria-hidden="true"></i><a routerLink="profile">Profile</a></button>
      </mat-sidenav>
-    <mat-sidenav-content fxLayout
-    fxLayoutAlign="center" fxFlex="1 1 auto" fxLayoutGap="50px">Main</mat-sidenav-content>
+    <mat-sidenav-content  fxLayout="column" fxLayoutAlign="start stretch" 
+     fxLayoutGap="10px">Main
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
   </mat-sidenav-container>
   <!-- <mat-drawer-container class="example-container">
     <mat-drawer mode="side" opened>Drawer content</mat-drawer>

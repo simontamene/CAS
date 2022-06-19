@@ -7,10 +7,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { ProfileComponent } from './profile/profile.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
-    AdminstrativeComponent
+    AdminstrativeComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +22,9 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
-    FlexLayoutModule 
+    FlexLayoutModule,
+    MatCardModule
+     
   ]
 })
 export class AdminstrativeModule { }

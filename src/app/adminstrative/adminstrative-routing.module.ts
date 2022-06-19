@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminstrativeComponent } from './adminstrative.component';
+import { ProfileComponent } from './profile/profile.component';
 
-const routes: Routes = [{ path: '', component: AdminstrativeComponent }];
+const routes: Routes = [
+  { path: '', component: AdminstrativeComponent ,
+children:[
+  {path:'profile',component:ProfileComponent},
+]
+}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

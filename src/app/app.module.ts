@@ -10,11 +10,13 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { FondnotComponent } from './fondnot/fondnot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ScroDirective
+    ScroDirective,
+    FondnotComponent
   ],
   imports: [
     BrowserModule,
