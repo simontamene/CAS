@@ -1,9 +1,39 @@
 
-<mat-card fxFlexOffset="15" ><p>profile works!
+<mat-card fxFlex="100" fxflexfill="100%"><p>
    
-    <i class="fa fa-user  fa-5x" aria-hidden="true"></i>
+    <img [src]="image" alt="" style="height:100px; width:auto">
     <br>
     <br>
-    User-name
-    gggg
+   <input type="file" (change)="ph($event)">
+
+   
 </p></mat-card>
+<mat-card>
+<form class="row g-3 needs-validation" [formGroup]="profileForm">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">First name</span>
+    <input type="text" placeholder="Username" aria-label="Username" 
+    formControlName="name">
+    
+    <div class="input-group mb-3" style="margin-top:10px" >
+      <span class="input-group-text" id="basic-addon1">Middle Name</span>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"
+      formControlName="middlename">
+    </div>
+    <mat-divider></mat-divider>
+    <div class="input-group mb-3" >
+      <span class="input-group-text" id="basic-addon1">Last Name</span>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"
+      formControlName="lastname">
+    </div>
+    <select>
+      <option>
+         Male
+      </option>
+      <option>
+        Female
+      </option>
+    </select>
+  </div>
+  </form>
+  </mat-card>

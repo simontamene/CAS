@@ -1,0 +1,37 @@
+<h1 mat-dialog-title>Add New User Form</h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="outline">
+        <mat-label>ስም</mat-label>
+        <input matInput placeholder="Simon">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>የአባት ስም</mat-label>
+        <input matInput placeholder="Simon">
+      </mat-form-field>
+       <mat-form-field appearance="outline">
+        <mat-label>የአያት ስም</mat-label>
+        <input matInput placeholder="Simon">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Gender</mat-label>
+        <mat-select placeholder="ማዕረግ">
+            <mat-option value="ወንድ">ወንድ</mat-option>
+            <mat-option value="ሰት">ሰት</mat-option>
+        </mat-select>
+      </mat-form-field>
+       <mat-form-field appearance="outline">
+        <mat-label>ማዕረግ</mat-label>
+        <mat-select placeholder="ማዕረግ">
+            <mat-option value="ኮማንደር">ኮማንደር</mat-option>
+            <mat-option value="ምክትል ኮማንደር">ምክትል ኮማንደር</mat-option>
+            <mat-option value="ረዳት ኮማንደር">ረዳት ኮማንደር</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>ቀን ምረጥ</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+</div>

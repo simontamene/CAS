@@ -145,24 +145,28 @@
 // }
 .container {
     margin: 10px;
+    
     //width: 100%;
     overflow: hidden;
     // height: 100px;
   }
   .ontainer {
-    margin: 0px;
+    margin: 10px;
+    overflow: hidden;
     // height: 100px;
   }
   
   .item {
-    // border-radius: .2em;
-      color:black;
-    // font-family: sans-serif;
+    //border-radius: .2em;
+    color:black;
+    background-color:whitesmoke;
+    //font-family: sans-serif;
+    
     font-size: 2em;
-     padding: 1em 1em;
+    padding: 1em 1em;
     height: 100px;
     text-transform: uppercase;
-  }
+}
   
   .item-1 {
     background-color:whitesmoke;
@@ -174,10 +178,17 @@
     background-color:whitesmoke;
     text-align: center;
     height: 16em;
-  }
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
   
   .item-3 {
     background-color:whitesmoke;
   }
   
-  
+  input.ng-touched.ng-invalid{
+    border: 2px solid red;
+}

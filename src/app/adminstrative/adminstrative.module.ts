@@ -9,11 +9,21 @@ import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ProfileComponent } from './profile/profile.component';
 import {MatCardModule} from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatDialogModule} from '@angular/material/dialog';
+import { AddUComponent } from './add-u/add-u.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core'
 
 @NgModule({
   declarations: [
     AdminstrativeComponent,
-    ProfileComponent
+    ProfileComponent,
+    AddUComponent
   ],
   imports: [
     CommonModule,
@@ -23,8 +33,15 @@ import {MatCardModule} from '@angular/material/card';
     MatButtonModule,
     MatIconModule,
     FlexLayoutModule,
-    MatCardModule
-     
+    MatCardModule,
+    ReactiveFormsModule,
+    MatDividerModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ]
 })
 export class AdminstrativeModule { }
