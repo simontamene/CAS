@@ -11,6 +11,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { FondnotComponent } from './fondnot/fondnot.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { FondnotComponent } from './fondnot/fondnot.component';
     MatIconModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,146 @@
+{
+  "US": [
+    {
+      "name": "gg",
+      "mname": "gg",
+      "lname": "g",
+      "gender": "ወንድ",
+      "level": "ምክትል ኮማንደር",
+      "tel": "22222",
+      "email": "ggggg",
+      "pass": "gggggggg",
+      "date": "2022-06-14T21:00:00.000Z",
+      "id": 1
+    },
+    {
+      "name": "g",
+      "mname": "4",
+      "lname": "yu",
+      "gender": "ሰት",
+      "level": "ረዳት ኮማንደር",
+      "tel": "445",
+      "email": "tttt",
+      "pass": "tttttt",
+      "date": "2022-06-23T21:00:00.000Z",
+      "id": 2
+    },
+    {
+      "name": "s",
+      "mname": "s",
+      "lname": "s",
+      "gender": "ወንድ",
+      "level": "ምክትል ኮማንደር",
+      "tel": "s",
+      "email": "s",
+      "pass": "s",
+      "date": "2022-06-14T21:00:00.000Z",
+      "id": 3
+    },
+    {
+      "name": "f",
+      "mname": "t",
+      "lname": "t",
+      "gender": "ወንድ",
+      "level": "ምክትል ኮማንደር",
+      "tel": "666",
+      "email": "ggg",
+      "pass": "ggg",
+      "date": "2022-06-14T21:00:00.000Z",
+      "id": 4
+    },
+    {
+      "name": "ssss",
+      "mname": "ssss",
+      "lname": "sss",
+      "gender": "ሰት",
+      "level": "ምክትል ኮማንደር",
+      "tel": "s",
+      "email": "s",
+      "pass": "s",
+      "date": "2022-06-15T21:00:00.000Z",
+      "id": 5
+    },
+    {
+      "name": "1",
+      "mname": "1",
+      "lname": "1",
+      "gender": "ወንድ",
+      "level": "ምክትል ኮማንደር",
+      "tel": "11",
+      "email": "11",
+      "pass": "11",
+      "date": "2001-01-26T21:00:00.000Z",
+      "id": 6
+    },
+    {
+      "name": "gggg",
+      "mname": "j",
+      "lname": "jjjj",
+      "gender": "ወንድ",
+      "level": "ምክትል ኮማንደር",
+      "tel": "1111",
+      "email": "uuuuu",
+      "pass": "uuuu",
+      "date": "2022-06-14T21:00:00.000Z",
+      "id": 7
+    },
+    {
+      "name": "hhhh",
+      "mname": "hhhhhhhhhhh",
+      "lname": "gggggggggggg",
+      "gender": "ወንድ",
+      "level": "ምክትል ኮማንደር",
+      "tel": "111111",
+      "email": "simalike245@gmail.com",
+      "pass": "ggggggg",
+      "date": "2022-06-14T21:00:00.000Z",
+      "id": 8
+    },
+    {
+      "name": "ggggggg",
+      "mname": "gggggggggg",
+      "lname": "ggggggggggg",
+      "gender": "ወንድ",
+      "level": "ምክትል ኮማንደር",
+      "tel": "66666666666",
+      "email": "simalike245@gmail.com",
+      "pass": "666666666666666666",
+      "date": "2022-06-14T21:00:00.000Z",
+      "id": 9
+    },
+    {
+      "name": "fffffffff",
+      "mname": "ffffffffffffff",
+      "lname": "fffffffffffffff",
+      "gender": "ወንድ",
+      "level": "ምክትል ኮማንደር",
+      "tel": "55555555555",
+      "email": "simalike245@gmail.com",
+      "pass": "555555555555555555555",
+      "date": "2022-06-18T21:00:00.000Z",
+      "id": 10
+    },
+    {
+      "name": "ddddd",
+      "mname": "ddddd",
+      "lname": "dddddddd",
+      "gender": "ሰት",
+      "level": "ምክትል ኮማንደር",
+      "tel": "44444",
+      "email": "fffffff",
+      "pass": "ffffffff",
+      "date": "2022-06-13T21:00:00.000Z",
+      "id": 11
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

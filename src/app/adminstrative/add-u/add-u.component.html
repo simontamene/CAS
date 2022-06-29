@@ -1,37 +1,78 @@
 <h1 mat-dialog-title>Add New User Form</h1>
 <div mat-dialog-content>
+
+  <form [formGroup]="us">
     <mat-form-field appearance="outline">
         <mat-label>ስም</mat-label>
-        <input matInput placeholder="Simon">
+        <input formControlName="name" matInput placeholder="Simon">
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>የአባት ስም</mat-label>
-        <input matInput placeholder="Simon">
+        <input formControlName="mname" matInput placeholder="Tamene">
       </mat-form-field>
        <mat-form-field appearance="outline">
         <mat-label>የአያት ስም</mat-label>
-        <input matInput placeholder="Simon">
+        <input formControlName="lname" matInput placeholder="Lebessa">
       </mat-form-field>
-      <mat-form-field appearance="outline">
+      <label for=""><h1>Gender</h1></label>
+      <mat-divider></mat-divider>
+      <mat-radio-group formControlName="gender" class="example-radio-group">
+        <mat-radio-button class="example-radio-button" *ngFor="let gen of gender" [value]="gen">
+          {{gen}}
+        </mat-radio-button>
+      </mat-radio-group>
+      <mat-divider></mat-divider>
+      <!-- <mat-form-field appearance="outline">
         <mat-label>Gender</mat-label>
         <mat-select placeholder="ማዕረግ">
             <mat-option value="ወንድ">ወንድ</mat-option>
             <mat-option value="ሰት">ሰት</mat-option>
         </mat-select>
-      </mat-form-field>
+      </mat-form-field> -->
        <mat-form-field appearance="outline">
         <mat-label>ማዕረግ</mat-label>
-        <mat-select placeholder="ማዕረግ">
+        <mat-select formControlName="level" placeholder="ማዕረግ">
             <mat-option value="ኮማንደር">ኮማንደር</mat-option>
             <mat-option value="ምክትል ኮማንደር">ምክትል ኮማንደር</mat-option>
             <mat-option value="ረዳት ኮማንደር">ረዳት ኮማንደር</mat-option>
         </mat-select>
       </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Telephone</mat-label>
+        <span matPrefix>+251 &nbsp;</span>
+        <input formControlName="tel" type="tel" matInput placeholder="0946854382">
+        <mat-icon matSuffix>mode_edit</mat-icon>
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input formControlName="email" type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input formControlName="pass" matInput [type]="showPassword ? 'text' : 'password'" name="password">
+        <mat-icon matSuffix (click)="togglePasswordVisibility()">
+            {{showPassword?'visibility_off':'visibility'}}
+        </mat-icon>
+    </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>ቀን ምረጥ</mat-label>
-        <input matInput [matDatepicker]="picker">
+        <input formControlName="date" matInput [matDatepicker]="picker">
         <mat-hint>MM/DD/YYYY</mat-hint>
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
+    </form>
 </div>
+<div mat-dialog-action [align]="'end'">
+<div>
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button style="margin-left: 10px;" mat-raised-button color="primary" (click)="addUser()">Save</button>
+</div>
+</div>
+

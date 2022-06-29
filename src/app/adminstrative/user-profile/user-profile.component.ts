@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {MatDialog} from '@angular/material/dialog';
+import { Observable } from 'rxjs';
+import { ApiService } from 'src/app/services/api.service';
 import { AddUComponent } from '../add-u/add-u.component';
 
 
@@ -10,14 +12,26 @@ import { AddUComponent } from '../add-u/add-u.component';
 })
 export class UserProfileComponent implements OnInit {
 
-  constructor(private dialog:MatDialog) { }
+
+
+  listUsers:any;
+  constructor(private dialog:MatDialog,private api:ApiService) { }
+
   ngOnInit(): void {
+ this.api.getUser().subscribe(data=>{
+   this.listUsers=data;
+   console.log(data);
+ })
+//console.log("Hi");
+    
   }
   openDialog() {
     this.dialog.open(AddUComponent, {
      width:'40%'
     });
   }
+
+
 }
 
   

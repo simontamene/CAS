@@ -9,7 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ProfileComponent } from './profile/profile.component';
 import {MatCardModule} from '@angular/material/card';
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AddUComponent } from './add-u/add-u.component';
@@ -18,6 +18,12 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core'
+import {MatRadioModule} from '@angular/material/radio';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatListModule} from '@angular/material/list';
+import { BrowserModule } from '@angular/platform-browser';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +47,13 @@ import {MatNativeDateModule} from '@angular/material/core'
     MatInputModule,
     MatSelectModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatRadioModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatListModule,
+    FormsModule
+    //BrowserModule
   ]
 })
 export class AdminstrativeModule { }
