@@ -13,4 +13,7 @@ export class ApiService {
   getUser(){
     return this.http.get("http://localhost:3000/US")
   }
+  getSalary(){
+    return this.http.get("/api/oracon")
+  }
 }

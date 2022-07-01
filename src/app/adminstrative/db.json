@@ -1,0 +1,40 @@
+{
+  "us": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "name": "FF",
+      "mname": "FF",
+      "lname": "FFF",
+      "gender": "ወንድ",
+      "level": "ኮማንደር",
+      "tel": "0000",
+      "email": "GGGG",
+      "pass": "FFFF",
+      "date": "2022-06-08T21:00:00.000Z",
+      "id": 2
+    }
+  ],
+  
+  "salary": [
+    
+    {
+      "Name": "Belay",
+      "Fname": "Belay",
+      "LastName":"Belay",
+      "id":"fpc123",
+      "salary":"10000",
+      "Amount":"50000",
+      "startdate":"6/29/2022",
+      "enddate":"7/29/2024",
+      "loanrate":"10%",
+      "Remain":"30,000"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

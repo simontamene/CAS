@@ -1,0 +1,43 @@
+<h1>የተቋሙ ሰራተኞች የብድር መረጃ ዝርዝር</h1>
+
+<table style="width:100%">
+    <tr>
+      <th>ስም</th>
+      <th>የአባት ስም</th>
+      <th>የአያት ስም</th>
+      <th>መለያ ቁጥር</th>
+      <th>ደሞዝ</th>
+      <th>የወሰደው/ችው የብድር መጠን</th>
+      <th>የተወሰደበት ቀን</th>
+      <th>የሚያልቅበት ቀን</th>
+      <th>ወለዱ</th>
+      <th>ያልተከፈለ ቀሪ</th>
+    </tr>
+    <tr *ngFor="let list of list">
+        <td>{{list.ID}}</td>
+        <td>{{list.NAME}}</td>
+        <td>{{list.FATHER_NAME}}</td>
+        <td>{{list.GRAND_FATHER}}</td>
+        <td>{{list.GENDER}}</td>
+        <td>{{list.NAME}}</td>
+        <td>{{list.LOAN_AMOUNT}}</td>
+        <td>{{list.START_DATE}}</td>
+        <td>{{list.END_DATE}}</td>
+        <td>{{list.SALARY_AMOUNT}}</td>
+        <!-- <td>{{list.Fname}}</td>
+        <td>{{list.LastName}}</td>
+        <td>{{list.id}}</td>
+        <td>{{list.salary}}</td>
+        <td>{{list.Amount}}</td>
+        <td>{{list.startdate}}</td>
+        <td>{{list.enddate}}</td>
+        <td>{{list.loanrate}}</td>
+        <td>{{list.Remain}}</td> -->
+      </tr>
+    </table>
+
+<!-- <ul>
+ <li *ngFor="let list of list">{{list.Name}} {{list.Fname}} {{list.LastName}} {{list.id}} {{list.salary}}
+    {{list.Amount}} {{list.startdate}} {{list.enddate}} {{list.loanrate}} {{list.Remain}}
+ </li>   
+</ul> -->

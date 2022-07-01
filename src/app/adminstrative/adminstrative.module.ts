@@ -23,13 +23,15 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatListModule} from '@angular/material/list';
 import { BrowserModule } from '@angular/platform-browser';
+import { SalaryListComponent } from './salary-list/salary-list.component';
 
 
 @NgModule({
   declarations: [
     AdminstrativeComponent,
     ProfileComponent,
-    AddUComponent
+    AddUComponent,
+    SalaryListComponent
   ],
   imports: [
     CommonModule,
